@@ -25,7 +25,7 @@ ES_VOLUME_SIZE = 20
 
 # ALB related configurations
 MAKE_ALB_INTERNAL = True  # False if ALB need to be public(internet facing) else True
-ALB_PROTOCOL = "HTTP"
+ALB_PROTOCOL = "HTTPS"
 SSL_CERTIFICATE_ARN = ""  # Required only if ALB_PROTOCOL is defined as HTTPS
 PACBOT_DOMAIN = ""  # Required only if you point a CNAME record to ALB ex: app.pacbot.com
 
@@ -52,7 +52,7 @@ AWS_REGION = ""
 AWS_ASSUME_ROLE_ARN = ""
 
 # This settings enable Vulnerability feature and servie
-ENABLE_VULNERABILITY_FEATURE = False
+ENABLE_VULNERABILITY_FEATURE = True
 QUALYS_API_URL = ""  # Qualys API Url without trailing slash
 QUALYS_INFO = ""  # Base64 encoded user:password of qualys
 
